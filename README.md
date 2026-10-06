@@ -40,16 +40,3 @@ I built and expanded the application by introducing several production-ready fea
 * **Custom Utilities (`toArabicDigits` & `getDate`)**: 
   - Lightweight, native utility functions crafted to handle Eastern Arabic numeral formatting and locale-aware date rendering without relying on bulky external i18n libraries.
 
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js (v18 or higher)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
