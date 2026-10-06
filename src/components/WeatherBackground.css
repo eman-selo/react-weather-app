@@ -1,0 +1,235 @@
+/* Container */
+.weather-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  overflow: hidden;
+  transition: background 1.5s ease-in-out;
+}
+
+/* ---------------------------------
+  Base Colors
+----------------------------------- */
+.bg-clear {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #2563eb 100%);
+}
+
+.bg-cloudy {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+}
+
+.bg-thunder {
+  background: linear-gradient(135deg, #050508 0%, #110e1b 50%, #1a162b 100%);
+}
+
+.bg-rainy {
+  background: linear-gradient(135deg, #090d16 0%, #0f172a 50%, #1e293b 100%);
+}
+
+.bg-snowy {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #475569 100%);
+}
+
+.bg-default {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+}
+
+/* ---------------------------------
+   1. (Sun & Rotating Rays)
+----------------------------------- */
+.sun-container {
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 380px;
+  height: 380px;
+  pointer-events: none;
+}
+
+.sun-core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 180px;
+  height: 180px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 230, 150, 0.9) 0%,
+    rgba(255, 180, 50, 0.4) 60%,
+    transparent 100%
+  );
+  box-shadow: 0 0 80px rgba(255, 200, 80, 0.5);
+  animation: sunPulse 4s infinite alternate ease-in-out;
+}
+
+.sun-rays {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: repeating-conic-gradient(
+    from 0deg,
+    rgba(255, 220, 120, 0.12) 0deg 15deg,
+    transparent 15deg 30deg
+  );
+  border-radius: 50%;
+  animation: rotateRays 25s linear infinite;
+}
+
+@keyframes rotateRays {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sunPulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0.95);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 1;
+  }
+}
+
+/* ---------------------------------
+   2. (Clouds)
+----------------------------------- */
+.clouds-scene {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.cloud-shape {
+  position: absolute;
+  width: 600px;
+  height: 220px;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow:
+    120px 80px 0 20px rgba(255, 255, 255, 0.05),
+    -100px 40px 0 10px rgba(255, 255, 255, 0.04);
+  filter: blur(25px);
+}
+
+.cloud-fast {
+  top: 10%;
+  animation: driveClouds 22s linear infinite;
+}
+
+.cloud-slow {
+  top: 35%;
+  opacity: 0.7;
+  animation: driveClouds 38s linear infinite;
+  animation-delay: -15s;
+}
+
+@keyframes driveClouds {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+/* ---------------------------------
+   3. (Lightning Flashes)
+----------------------------------- */
+.lightning-flash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.25);
+  opacity: 0;
+  pointer-events: none;
+  animation: strike 4s infinite ease-in-out;
+}
+
+@keyframes strike {
+  0%,
+  92%,
+  96%,
+  100% {
+    opacity: 0;
+  }
+  93% {
+    opacity: 0.6;
+  }
+  94% {
+    opacity: 0.1;
+  }
+  95% {
+    opacity: 0.8;
+  }
+}
+
+/* ---------------------------------
+   4. (Rain)
+----------------------------------- */
+.rain-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.rain-drop {
+  position: absolute;
+  top: -20px;
+  width: 2px;
+  height: 28px;
+  background: linear-gradient(transparent, rgba(255, 255, 255, 0.7));
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-20px) translateX(0);
+  }
+  100% {
+    transform: translateY(105vh) translateX(-20px);
+  }
+}
+
+/* ---------------------------------
+   5.(Snow)
+----------------------------------- */
+.snow-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.snowflake {
+  position: absolute;
+  top: -20px;
+  color: rgba(255, 255, 255, 0.9);
+  user-select: none;
+  animation: snowFall linear infinite;
+}
+
+@keyframes snowFall {
+  0% {
+    transform: translateY(-20px) translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(50vh) translateX(30px) rotate(180deg);
+  }
+  100% {
+    transform: translateY(105vh) translateX(-30px) rotate(360deg);
+  }
+}
