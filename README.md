@@ -1,19 +1,55 @@
-# React + Vite
+# 🌤️ Weather Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance, responsive React weather application featuring real-time meteorological data, dynamic CSS animated backgrounds, and full Arabic/English internationalization.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 About The Project
 
-## React Compiler
+This project was built and enhanced while following the **React JS** course provided by **Tarmeez Academy**.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+I built and expanded the application by introducing several production-ready features:
+- **Auto-Location Detection**: Dynamically fetches real-time weather based on the user's current coordinates using the `Geolocation API`.
+- **Dynamic Weather Backgrounds**: Custom GPU-accelerated CSS animations that react to live weather conditions (Rain, Snow, Clouds, Clear Sun, and Thunderstorms).
+- **Full Bilingual Support**: Seamless switching between Arabic (RTL) and English with localized date formatting, Eastern Arabic numerals, and contextual error messages.
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack & Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **React 19**: Modern UI component architecture and efficient DOM updates.
+* **Vite**: Ultra-fast build tool and local development environment.
+* **Material-UI (MUI v5)**: Clean, responsive, and accessible layout structure.
+* **Axios**: Efficient HTTP requests handling integrated with `AbortController` signal handling to prevent race conditions.
+* **OpenWeatherMap API**: Live weather data provider.
+* **Pure CSS3 Keyframe Animations**: High-performance (60fps) weather animations (Rain, Snow, Clouds, Rays) using native CSS keyframes without external animation bloat.
+
+---
+
+## 🔍 Code Architecture & Implementation Highlights
+
+* **`useWeather` Hook**: 
+  - Manages central application state, data fetching lifecycle, and browser geolocation fallbacks.
+  - Features an integrated multi-language error dictionary (`ar` / `en`) that dynamically delivers localized messages based on the active language state.
+  - Implements clean request lifecycle management using standard `AbortController` signals to immediately cancel pending requests when dependencies change or components unmount.
+
+* **`WeatherBackground` Component**: 
+  - Dynamically renders background gradients and animated particle systems according to live weather conditions.
+  - Implements **negative CSS animation delays** (`animation-delay: -X.XXs`) across rain and snow arrays to force immediate, natural particle distribution on app launch without top-screen clustering.
+
+* **Custom Utilities (`toArabicDigits` & `getDate`)**: 
+  - Lightweight, native utility functions crafted to handle Eastern Arabic numeral formatting and locale-aware date rendering without relying on bulky external i18n libraries.
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
