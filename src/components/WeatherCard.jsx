@@ -12,8 +12,8 @@ import {
 import CloudIcon from "@mui/icons-material/Cloud";
 const translations = {
   ar: {
-    min: "الأدنى",
-    max: "الأعلى",
+    min: "الصغرى",
+    max: "الكبرى",
   },
   en: {
     min: "Minimum",

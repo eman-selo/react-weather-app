@@ -16,11 +16,13 @@ The application was developed to provide a smooth and engaging weather experienc
 
 ### ✨ Features
 
-* **Automatic Location Detection:** Automatically detects the user's location to display the current weather conditions.
-* **Dynamic Weather Experience:** The application's appearance changes according to the current weather conditions, including rain, snow, clouds, clear skies, and thunderstorms.
-* **Arabic & English Support:** Provides a seamless bilingual experience in both Arabic and English.
-* **RTL Support:** The interface adapts to right-to-left layout when using Arabic.
-* **Localized Information:** Weather details, dates, numbers, and messages are displayed according to the selected language.
+<<<<<<< HEAD
+
+- **Automatic Location Detection:** Automatically detects the user's location to display the current weather conditions.
+- **Dynamic Weather Experience:** The application's appearance changes according to the current weather conditions, including rain, snow, clouds, clear skies, and thunderstorms.
+- **Arabic & English Support:** Provides a seamless bilingual experience in both Arabic and English.
+- **RTL Support:** The interface adapts to right-to-left layout when using Arabic.
+- **Localized Information:** Weather details, dates, numbers, and messages are displayed according to the selected language.
 
 ### 🎯 Project Goal
 
@@ -28,7 +30,7 @@ The goal of this project was to build a practical and user-friendly weather appl
 
 ---
 
-##  العربية
+## العربية
 
 <div dir="rtl" align="right">
 
@@ -40,11 +42,11 @@ The goal of this project was to build a practical and user-friendly weather appl
 
 ### ✨ المميزات
 
-* **تحديد الموقع تلقائيًا:** يحدد التطبيق موقع المستخدم تلقائيًا لعرض حالة الطقس الحالية.
-* **تجربة ديناميكية للطقس:** يتغير مظهر التطبيق حسب حالة الطقس الحالية، مثل المطر والثلوج والغيوم والسماء الصافية والعواصف الرعدية.
-* **دعم العربية والإنجليزية:** يوفر التطبيق تجربة استخدام ثنائية اللغة باللغتين العربية والإنجليزية.
-* **دعم RTL:** تتكيف الواجهة مع اتجاه الكتابة من اليمين إلى اليسار عند استخدام اللغة العربية.
-* **عرض المعلومات حسب اللغة:** يتم عرض تفاصيل الطقس والتواريخ والأرقام والرسائل بما يتناسب مع اللغة المختارة.
+- **تحديد الموقع تلقائيًا:** يحدد التطبيق موقع المستخدم تلقائيًا لعرض حالة الطقس الحالية.
+- **تجربة ديناميكية للطقس:** يتغير مظهر التطبيق حسب حالة الطقس الحالية، مثل المطر والثلوج والغيوم والسماء الصافية والعواصف الرعدية.
+- **دعم العربية والإنجليزية:** يوفر التطبيق تجربة استخدام ثنائية اللغة باللغتين العربية والإنجليزية.
+- **دعم RTL:** تتكيف الواجهة مع اتجاه الكتابة من اليمين إلى اليسار عند استخدام اللغة العربية.
+- **عرض المعلومات حسب اللغة:** يتم عرض تفاصيل الطقس والتواريخ والأرقام والرسائل بما يتناسب مع اللغة المختارة.
 
 ### 🎯 هدف المشروع
 
