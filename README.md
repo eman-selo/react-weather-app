@@ -16,8 +16,6 @@ The application was developed to provide a smooth and engaging weather experienc
 
 ### ✨ Features
 
-<<<<<<< HEAD
-
 - **Automatic Location Detection:** Automatically detects the user's location to display the current weather conditions.
 - **Dynamic Weather Experience:** The application's appearance changes according to the current weather conditions, including rain, snow, clouds, clear skies, and thunderstorms.
 - **Arabic & English Support:** Provides a seamless bilingual experience in both Arabic and English.
