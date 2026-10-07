@@ -6,7 +6,7 @@ A modern weather application designed to provide accurate and up-to-date weather
 
 ---
 
-## 🇬🇧 English
+## English
 
 ### 📌 About The Project
 
@@ -28,7 +28,7 @@ The goal of this project was to build a practical and user-friendly weather appl
 
 ---
 
-## 🇸🇦 العربية
+##  العربية
 
 <div dir="rtl" align="right">
 
@@ -48,7 +48,7 @@ The goal of this project was to build a practical and user-friendly weather appl
 
 ### 🎯 هدف المشروع
 
-يهدف هذا المشروع إلى إنشاء تطبيق عملي وسهل الاستخدام لعرض حالة الطقس، مع تطبيق المفاهيم التي تم تعلمها خلال **دورة React JS** وتطوير المشروع بإضافة ميزات تركز على سهولة الاستخدام، ودعم اللغات، وتحسين تجربة المستخدم.
+يهدف هذا المشروع إلى إنشاء تطبيق عملي وسهل الاستخدام لعرض حالة الطقس، مع تطبيق المفاهيم التي تم تعلمها خلال كورس **React Js** وتطوير المشروع بإضافة ميزات تركز على سهولة الاستخدام، ودعم اللغات، وتحسين تجربة المستخدم.
 
 </div>
 
