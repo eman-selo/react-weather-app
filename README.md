@@ -1,42 +1,59 @@
-# 🌤️ Weather Application
+# 🌤️ Weather Application | تطبيق الطقس
 
-A modern, high-performance, responsive React weather application featuring real-time meteorological data, dynamic CSS animated backgrounds, and full Arabic/English internationalization.
+A modern weather application designed to provide accurate and up-to-date weather information through a simple and intuitive interface.
 
----
-
-## 📌 About The Project
-
-This project was built and enhanced while following the **React JS** course provided by **Tarmeez Academy**.
-
-I built and expanded the application by introducing several production-ready features:
-- **Auto-Location Detection**: Dynamically fetches real-time weather based on the user's current coordinates using the `Geolocation API`.
-- **Dynamic Weather Backgrounds**: Custom GPU-accelerated CSS animations that react to live weather conditions (Rain, Snow, Clouds, Clear Sun, and Thunderstorms).
-- **Full Bilingual Support**: Seamless switching between Arabic (RTL) and English with localized date formatting, Eastern Arabic numerals, and contextual error messages.
+تطبيق طقس حديث مصمم لتوفير معلومات دقيقة ومحدثة عن حالة الطقس من خلال واجهة بسيطة وسهلة الاستخدام.
 
 ---
 
-## 🛠️ Tech Stack & Overview
+## 🇬🇧 English
 
-* **React 19**: Modern UI component architecture and efficient DOM updates.
-* **Vite**: Ultra-fast build tool and local development environment.
-* **Material-UI (MUI v5)**: Clean, responsive, and accessible layout structure.
-* **Axios**: Efficient HTTP requests handling integrated with `AbortController` signal handling to prevent race conditions.
-* **OpenWeatherMap API**: Live weather data provider.
-* **Pure CSS3 Keyframe Animations**: High-performance (60fps) weather animations (Rain, Snow, Clouds, Rays) using native CSS keyframes without external animation bloat.
+### 📌 About The Project
+
+This project was built and enhanced while following the **React JS course provided by Tarmeez Academy**.
+
+The application was developed to provide a smooth and engaging weather experience, with features focused on usability, localization, and visual interaction.
+
+### ✨ Features
+
+* **Automatic Location Detection:** Automatically detects the user's location to display the current weather conditions.
+* **Dynamic Weather Experience:** The application's appearance changes according to the current weather conditions, including rain, snow, clouds, clear skies, and thunderstorms.
+* **Arabic & English Support:** Provides a seamless bilingual experience in both Arabic and English.
+* **RTL Support:** The interface adapts to right-to-left layout when using Arabic.
+* **Localized Information:** Weather details, dates, numbers, and messages are displayed according to the selected language.
+
+### 🎯 Project Goal
+
+The goal of this project was to build a practical and user-friendly weather application while applying the concepts learned throughout the **React JS course** and enhancing the project with additional features focused on usability, localization, and user experience.
 
 ---
 
-## 🔍 Code Architecture & Implementation Highlights
+## 🇸🇦 العربية
 
-* **`useWeather` Hook**: 
-  - Manages central application state, data fetching lifecycle, and browser geolocation fallbacks.
-  - Features an integrated multi-language error dictionary (`ar` / `en`) that dynamically delivers localized messages based on the active language state.
-  - Implements clean request lifecycle management using standard `AbortController` signals to immediately cancel pending requests when dependencies change or components unmount.
+<div dir="rtl" align="right">
 
-* **`WeatherBackground` Component**: 
-  - Dynamically renders background gradients and animated particle systems according to live weather conditions.
-  - Implements **negative CSS animation delays** (`animation-delay: -X.XXs`) across rain and snow arrays to force immediate, natural particle distribution on app launch without top-screen clustering.
+### 📌 عن المشروع
 
-* **Custom Utilities (`toArabicDigits` & `getDate`)**: 
-  - Lightweight, native utility functions crafted to handle Eastern Arabic numeral formatting and locale-aware date rendering without relying on bulky external i18n libraries.
+تم بناء هذا المشروع وتطويره أثناء متابعة **دورة React JS المقدمة من أكاديمية ترميز**.
 
+تم تطوير التطبيق لتوفير تجربة سلسة وممتعة للمستخدم، مع التركيز على سهولة الاستخدام، ودعم اللغات، والتفاعل البصري.
+
+### ✨ المميزات
+
+* **تحديد الموقع تلقائيًا:** يحدد التطبيق موقع المستخدم تلقائيًا لعرض حالة الطقس الحالية.
+* **تجربة ديناميكية للطقس:** يتغير مظهر التطبيق حسب حالة الطقس الحالية، مثل المطر والثلوج والغيوم والسماء الصافية والعواصف الرعدية.
+* **دعم العربية والإنجليزية:** يوفر التطبيق تجربة استخدام ثنائية اللغة باللغتين العربية والإنجليزية.
+* **دعم RTL:** تتكيف الواجهة مع اتجاه الكتابة من اليمين إلى اليسار عند استخدام اللغة العربية.
+* **عرض المعلومات حسب اللغة:** يتم عرض تفاصيل الطقس والتواريخ والأرقام والرسائل بما يتناسب مع اللغة المختارة.
+
+### 🎯 هدف المشروع
+
+يهدف هذا المشروع إلى إنشاء تطبيق عملي وسهل الاستخدام لعرض حالة الطقس، مع تطبيق المفاهيم التي تم تعلمها خلال **دورة React JS** وتطوير المشروع بإضافة ميزات تركز على سهولة الاستخدام، ودعم اللغات، وتحسين تجربة المستخدم.
+
+</div>
+
+---
+
+## 📄 License
+
+This project is open source and available for learning purposes.
